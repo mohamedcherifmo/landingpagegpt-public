@@ -9,6 +9,7 @@ import GeneratedHTMLPage from '../components/GeneratedHTMLPage';
 import IntroSection from '@/components/IntroSection'
 import GeneratedSections from '@/components/GeneratedSections'
 import { Item } from '@/types/Item'
+import DownloadButton from '@/components/DownloadButton'
 
 
 export default function Home() {
@@ -58,6 +59,7 @@ export default function Home() {
 
           <main className={html ? "border-t border-slate-200 lg:relative lg:border-t-0 flex-1" : "hidden"}>
             <GeneratedHTMLPage html={html}></GeneratedHTMLPage>
+            <DownloadButton></DownloadButton>
           </main>
 
           <div className="fixed inset-x-0 bottom-0 z-10 lg:left-112 xl:left-120">
